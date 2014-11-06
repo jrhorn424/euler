@@ -1,3 +1,8 @@
+# See:
+#
+#   * http://stackoverflow.com/a/12586717/402618
+#   * http://stackoverflow.com/a/12180829/402618
+
 def sum_even_fibonacci_numbers(upto)
   generate_fibonacci_array(upto).select(&:even?).reduce(:+)
 end
@@ -13,11 +18,11 @@ def generate_fibonacci_array(upto)
 end
 
 def fibonacci(n)
-  if n == 0 || n == 1
-    1
-  else
-    fibonacci(n-2) + fibonacci(n-1)
-  end
+  fibonacci_r(0, 1, n)
+end
+
+def fibonacci_r(a, b, n)
+  n == 0 ? a : fibonacci_r(b, a + b, n - 1)
 end
 
 def even?(n)
