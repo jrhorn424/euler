@@ -1,14 +1,9 @@
-var _ = require("underscore");
+var Lazy = require("lazy.js");
 
 function sumEvenFibs(upto) {
-    return _.chain(generateFibonacciArray(upto))
-        .select(function(fib) {
-            return fib % 2 === 0;
-        })
-        .reduce(function(memo, evenFib) {
-            return memo + evenFib;
-        }, 0)
-        .value();
+    return Lazy(generateFibonacciArray(upto))
+        .filter(isEven)
+        .sum();
 }
 
 function generateFibonacciArray(upto) {
@@ -26,5 +21,7 @@ function fibonacci(n) {
         return fibonacci(n - 2) + fibonacci(n - 1);
     }
 }
+
+function isEven(n) { return n % 2 === 0; }
 
 console.log(sumEvenFibs(4000000));
