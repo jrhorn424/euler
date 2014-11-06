@@ -1,0 +1,23 @@
+{
+  "name": "euler",
+  "version": "1.0.0",
+  "description": "Solutions to Project Euler exercises. Spoilers!",
+  "dependencies": {
+    "underscore": "^1.7.0"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrhorn424/euler.git"
+  },
+  "keywords": [
+    "euler",
+    "practace"
+  ],
+  "author": "Jeffrey Horn <jeff@jrhorn.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrhorn424/euler/issues"
+  },
+  "homepage": "https://github.com/jrhorn424/euler"
+}
