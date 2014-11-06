@@ -8,14 +8,14 @@ function sumEvenFibs(upto) {
 
 function generateFibonacciArray(upto) {
     var arr = [];
-    for (var i = 1; fibonacci(i) <= upto; i++) {
+    for (var i = 0; fibonacci(i) <= upto; i++) {
         arr.push(fibonacci(i));
     }
     return arr;
 }
 
 function fibonacci(n) {
-    if (n < 2) {
+    if (n === 0 || n === 1) {
         return 1;
     } else {
         return fibonacci(n - 2) + fibonacci(n - 1);
