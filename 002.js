@@ -22,6 +22,8 @@ function fibonacci(n) {
     }
 }
 
-function isEven(n) { return n % 2 === 0; }
+function isEven(n) {
+    return n % 2 === 0;
+}
 
 console.log(sumEvenFibs(4000000));
