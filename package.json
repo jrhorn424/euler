@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Solutions to Project Euler exercises. Spoilers!",
   "dependencies": {
-    "lazy.js": "^0.3.2",
+    "lazy.js": "^0.3.2"
   },
   "private": true,
   "repository": {
