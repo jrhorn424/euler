@@ -1,0 +1,18 @@
+{
+  "name": "euler",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jrhorn424/euler",
+  "authors": [
+    "Jeffrey Horn <jeffh@generalassemb.ly>"
+  ],
+  "description": "Some solutions to Project Euler exercises. Contains spoilers.",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
